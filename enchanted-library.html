@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>The Enchanted Library</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Playfair+Display:wght@400;500;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-div">
+        <form action="enchanted-library.php" method="POST" class="form">
+          <div class="form-title">
+            <h1>The Enchanted Library</h1>
+            <div class="hr-container">
+              <hr class="hr-line" />
+            </div>
+          </div>
+          <fieldset class="fieldset">
+            <div class="img-container">
+              <p>
+                <img src="images/book4.png" alt="image of fantasy book" />
+              </p>
+            </div>
+            <p class="spacer"></p>
+            <p>
+              <label for="book-name"
+                >Book Name
+                <input
+                  type="text"
+                  name="book-name"
+                  placeholder="Enter Book Name"
+                  id="book-name"
+              /></label>
+            </p>
+            <p>
+              <label for="author-name"
+                >Author
+                <input
+                  type="text"
+                  name="author-name"
+                  placeholder="Enter Author Name"
+                  id="author-name"
+                />
+              </label>
+            </p>
+            <p>
+              <label for="genre"
+                >Genre
+                <input
+                  type="text"
+                  name="genre"
+                  placeholder="Enter Book Genre"
+                  id="genre"
+              /></label>
+            </p>
+            <p>
+              <label for="published-year">
+                Published Year
+                <input
+                  type="number"
+                  name="published-year"
+                  placeholder="Enter Book Published Year"
+                  min="1900"
+                  max="2023"
+                  id="published-year"
+                />
+              </label>
+            </p>
+            <p>
+              <input type="submit" name="submit" class="submit-btn" />
+            </p>
+
+            <div class="hr-container">
+              <hr class="hr-line" />
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
